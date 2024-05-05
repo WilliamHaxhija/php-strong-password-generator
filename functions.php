@@ -14,3 +14,7 @@ function generateRandPassword($number, $string) {
 
     return $password;
 }
+
+if ($userPassword !== '') {
+    header('Location: ./thankyou.php');
+}

@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/functions.php';
+session_start();
+$_SESSION['userpassword'] = $userPassword;
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +24,6 @@ require_once __DIR__ . '/functions.php';
                 <label for="password-length" class="form-label">Password Length:</label>
                 <input type="text" class="form-control w-50" id="password-length" name="password-length">
             </div>
-            <h3><?php echo $userPassword; ?></h3>
             <button type="submit" class="btn btn-primary position-absolute bottom-0 mb-4">Done</button>
         </form>
     </div>
